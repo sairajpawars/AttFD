@@ -1,0 +1,954 @@
+body {
+	margin: 48px;
+	background: #FFF;
+}
+
+.clear {
+	clear: both;
+}
+
+
+.display-container .column {
+	width: 20px;
+	height: 170;
+	margin-left: 2px;
+	margin-right: 2px;
+	float: left;
+}
+
+
+.display-container .row {
+	width: 20px;
+	height: 20px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	float: left;
+	background-color: #673AB7;
+	opacity: 0.2;
+
+}
+
+.display-container .row:hover,
+.progress-column:hover {
+	animation: mymove 0.2s infinite;
+	-webkit-animation: mymove 0.2s infinite;
+}
+
+@keyframes mymove {
+	from {
+		transform: rotateY(0deg);
+		background: initial;
+	}
+
+	to {
+		transform: rotateY(180deg);
+		background:rgb(238, 255, 0);
+	}
+}
+
+.display-container {
+	position: relative;
+	margin-right: 24px;
+	float: left;
+}
+
+.progress-bar {
+	width: 552px;
+	height: 20px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	margin-left: -280px;
+	float: left;
+}
+
+.progress-column {
+	width: 20px;
+	height: 20px;
+	margin-left: 2px;
+	margin-right: 2px;
+	float: left;
+	background-color: #673AB7;
+	opacity: 0.2;
+}
+
+.display-char-green .row,
+.status-green .progress-column {
+	background-color: rgb(0, 255, 0);
+	opacity: 1;
+}
+
+
+
+.display-char-red .coll-0 .row-1,
+.display-char-red .coll-0 .row-2,
+.display-char-red .coll-1 .row-0,
+.display-char-red .coll-2 .row-0,
+.display-char-red .coll-2 .row-5,
+.display-char-red .coll-2 .row-6,
+.display-char-red .coll-3 .row-0,
+.display-char-red .coll-3 .row-4,
+.display-char-red .coll-4 .row-1,
+.display-char-red .coll-4 .row-2,
+.display-char-red .coll-4 .row-3,
+.status-red .progcol-3,
+.status-red .progcol-9,
+.status-red .progcol-15,
+.status-red .progcol-21 {
+	background-color: rgb(255, 0, 0);
+	opacity: 1;
+}
+
+
+.display-char-A .coll-0 .row-2,
+.display-char-A .coll-0 .row-3,
+.display-char-A .coll-0 .row-4,
+.display-char-A .coll-0 .row-5,
+.display-char-A .coll-0 .row-6,
+.display-char-A .coll-1 .row-1,
+.display-char-A .coll-1 .row-4,
+.display-char-A .coll-2 .row-0,
+.display-char-A .coll-2 .row-4,
+.display-char-A .coll-3 .row-1,
+.display-char-A .coll-3 .row-4,
+.display-char-A .coll-4 .row-2,
+.display-char-A .coll-4 .row-3,
+.display-char-A .coll-4 .row-4,
+.display-char-A .coll-4 .row-5,
+.display-char-A .coll-4 .row-6 {
+	opacity: 1;
+}
+
+.display-char-B .coll-0 .row-0,
+.display-char-B .coll-0 .row-1,
+.display-char-B .coll-0 .row-2,
+.display-char-B .coll-0 .row-3,
+.display-char-B .coll-0 .row-4,
+.display-char-B .coll-0 .row-5,
+.display-char-B .coll-0 .row-6,
+.display-char-B .coll-1 .row-0,
+.display-char-B .coll-1 .row-3,
+.display-char-B .coll-1 .row-6,
+.display-char-B .coll-2 .row-0,
+.display-char-B .coll-2 .row-3,
+.display-char-B .coll-2 .row-6,
+.display-char-B .coll-3 .row-0,
+.display-char-B .coll-3 .row-3,
+.display-char-B .coll-3 .row-6,
+.display-char-B .coll-4 .row-1,
+.display-char-B .coll-4 .row-2,
+.display-char-B .coll-4 .row-4,
+.display-char-B .coll-4 .row-5 {
+	opacity: 1;
+}
+
+.display-char-C .coll-0 .row-1,
+.display-char-C .coll-0 .row-2,
+.display-char-C .coll-0 .row-3,
+.display-char-C .coll-0 .row-4,
+.display-char-C .coll-0 .row-5,
+.display-char-C .coll-1 .row-0,
+.display-char-C .coll-1 .row-6,
+.display-char-C .coll-2 .row-0,
+.display-char-C .coll-2 .row-6,
+.display-char-C .coll-3 .row-0,
+.display-char-C .coll-3 .row-6,
+.display-char-C .coll-4 .row-1,
+.display-char-C .coll-4 .row-5 {
+	opacity: 1;
+}
+
+.display-char-D .coll-0 .row-0,
+.display-char-D .coll-0 .row-1,
+.display-char-D .coll-0 .row-2,
+.display-char-D .coll-0 .row-3,
+.display-char-D .coll-0 .row-4,
+.display-char-D .coll-0 .row-5,
+.display-char-D .coll-0 .row-6,
+.display-char-D .coll-1 .row-0,
+.display-char-D .coll-1 .row-6,
+.display-char-D .coll-2 .row-0,
+.display-char-D .coll-2 .row-6,
+.display-char-D .coll-3 .row-0,
+.display-char-D .coll-3 .row-6,
+.display-char-D .coll-4 .row-1,
+.display-char-D .coll-4 .row-2,
+.display-char-D .coll-4 .row-3,
+.display-char-D .coll-4 .row-4,
+.display-char-D .coll-4 .row-5 {
+	opacity: 1;
+}
+
+.display-char-E .coll-0 .row-0,
+.display-char-E .coll-0 .row-1,
+.display-char-E .coll-0 .row-2,
+.display-char-E .coll-0 .row-3,
+.display-char-E .coll-0 .row-4,
+.display-char-E .coll-0 .row-5,
+.display-char-E .coll-0 .row-6,
+.display-char-E .coll-1 .row-0,
+.display-char-E .coll-1 .row-3,
+.display-char-E .coll-1 .row-6,
+.display-char-E .coll-2 .row-0,
+.display-char-E .coll-2 .row-3,
+.display-char-E .coll-2 .row-6,
+.display-char-E .coll-3 .row-0,
+.display-char-E .coll-3 .row-3,
+.display-char-E .coll-3 .row-6,
+.display-char-E .coll-4 .row-0,
+.display-char-E .coll-4 .row-6 {
+	opacity: 1;
+}
+
+.display-char-F .coll-0 .row-0,
+.display-char-F .coll-0 .row-1,
+.display-char-F .coll-0 .row-2,
+.display-char-F .coll-0 .row-3,
+.display-char-F .coll-0 .row-4,
+.display-char-F .coll-0 .row-5,
+.display-char-F .coll-0 .row-6,
+.display-char-F .coll-1 .row-0,
+.display-char-F .coll-1 .row-3,
+.display-char-F .coll-2 .row-0,
+.display-char-F .coll-2 .row-3,
+.display-char-F .coll-3 .row-0,
+.display-char-F .coll-3 .row-3,
+.display-char-F .coll-4 .row-0 {
+	opacity: 1;
+}
+
+.display-char-G .coll-0 .row-1,
+.display-char-G .coll-0 .row-2,
+.display-char-G .coll-0 .row-3,
+.display-char-G .coll-0 .row-4,
+.display-char-G .coll-0 .row-5,
+.display-char-G .coll-1 .row-0,
+.display-char-G .coll-1 .row-6,
+.display-char-G .coll-2 .row-0,
+.display-char-G .coll-2 .row-3,
+.display-char-G .coll-2 .row-6,
+.display-char-G .coll-3 .row-0,
+.display-char-G .coll-3 .row-3,
+.display-char-G .coll-3 .row-6,
+.display-char-G .coll-4 .row-1,
+.display-char-G .coll-4 .row-3,
+.display-char-G .coll-4 .row-4,
+.display-char-G .coll-4 .row-5,
+.display-char-G .coll-4 .row-6 {
+	opacity: 1;
+}
+
+.display-char-H .coll-0 .row-0,
+.display-char-H .coll-0 .row-1,
+.display-char-H .coll-0 .row-2,
+.display-char-H .coll-0 .row-3,
+.display-char-H .coll-0 .row-4,
+.display-char-H .coll-0 .row-5,
+.display-char-H .coll-0 .row-6,
+.display-char-H .coll-1 .row-3,
+.display-char-H .coll-2 .row-3,
+.display-char-H .coll-3 .row-3,
+.display-char-H .coll-4 .row-0,
+.display-char-H .coll-4 .row-1,
+.display-char-H .coll-4 .row-2,
+.display-char-H .coll-4 .row-3,
+.display-char-H .coll-4 .row-4,
+.display-char-H .coll-4 .row-5,
+.display-char-H .coll-4 .row-6 {
+	opacity: 1;
+}
+
+.display-char-I .coll-0 .row-0,
+.display-char-I .coll-0 .row-6,
+.display-char-I .coll-1 .row-0,
+.display-char-I .coll-1 .row-6,
+.display-char-I .coll-2 .row-0,
+.display-char-I .coll-2 .row-1,
+.display-char-I .coll-2 .row-2,
+.display-char-I .coll-2 .row-3,
+.display-char-I .coll-2 .row-4,
+.display-char-I .coll-2 .row-5,
+.display-char-I .coll-2 .row-6,
+.display-char-I .coll-3 .row-0,
+.display-char-I .coll-3 .row-6,
+.display-char-I .coll-4 .row-0,
+.display-char-I .coll-4 .row-6 {
+	opacity: 1;
+}
+
+.display-char-J .coll-0 .row-5,
+.display-char-J .coll-1 .row-6,
+.display-char-J .coll-2 .row-0,
+.display-char-J .coll-2 .row-0,
+.display-char-J .coll-2 .row-6,
+.display-char-J .coll-3 .row-0,
+.display-char-J .coll-3 .row-1,
+.display-char-J .coll-3 .row-2,
+.display-char-J .coll-3 .row-3,
+.display-char-J .coll-3 .row-4,
+.display-char-J .coll-3 .row-5,
+.display-char-J .coll-4 .row-0 {
+	opacity: 1;
+}
+
+.display-char-K .coll-0 .row-0,
+.display-char-K .coll-0 .row-1,
+.display-char-K .coll-0 .row-2,
+.display-char-K .coll-0 .row-3,
+.display-char-K .coll-0 .row-4,
+.display-char-K .coll-0 .row-5,
+.display-char-K .coll-0 .row-6,
+.display-char-K .coll-1 .row-3,
+.display-char-K .coll-2 .row-2,
+.display-char-K .coll-2 .row-4,
+.display-char-K .coll-3 .row-1,
+.display-char-K .coll-3 .row-5,
+.display-char-K .coll-4 .row-0,
+.display-char-K .coll-4 .row-6 {
+	opacity: 1;
+}
+
+.display-char-L .coll-0 .row-0,
+.display-char-L .coll-0 .row-1,
+.display-char-L .coll-0 .row-2,
+.display-char-L .coll-0 .row-3,
+.display-char-L .coll-0 .row-4,
+.display-char-L .coll-0 .row-5,
+.display-char-L .coll-0 .row-6,
+.display-char-L .coll-1 .row-6,
+.display-char-L .coll-2 .row-6,
+.display-char-L .coll-3 .row-6,
+.display-char-L .coll-4 .row-6 {
+	opacity: 1;
+}
+
+.display-char-M .coll-0 .row-0,
+.display-char-M .coll-0 .row-1,
+.display-char-M .coll-0 .row-2,
+.display-char-M .coll-0 .row-3,
+.display-char-M .coll-0 .row-4,
+.display-char-M .coll-0 .row-5,
+.display-char-M .coll-0 .row-6,
+.display-char-M .coll-1 .row-1,
+.display-char-M .coll-2 .row-2,
+.display-char-M .coll-2 .row-3,
+.display-char-M .coll-3 .row-1,
+.display-char-M .coll-4 .row-0,
+.display-char-M .coll-4 .row-1,
+.display-char-M .coll-4 .row-2,
+.display-char-M .coll-4 .row-3,
+.display-char-M .coll-4 .row-4,
+.display-char-M .coll-4 .row-5,
+.display-char-M .coll-4 .row-6 {
+	opacity: 1;
+}
+
+.display-char-N .coll-0 .row-0,
+.display-char-N .coll-0 .row-1,
+.display-char-N .coll-0 .row-2,
+.display-char-N .coll-0 .row-3,
+.display-char-N .coll-0 .row-4,
+.display-char-N .coll-0 .row-5,
+.display-char-N .coll-0 .row-6,
+.display-char-N .coll-1 .row-2,
+.display-char-N .coll-2 .row-3,
+.display-char-N .coll-3 .row-4,
+.display-char-N .coll-4 .row-0,
+.display-char-N .coll-4 .row-1,
+.display-char-N .coll-4 .row-2,
+.display-char-N .coll-4 .row-3,
+.display-char-N .coll-4 .row-4,
+.display-char-N .coll-4 .row-5,
+.display-char-N .coll-4 .row-6 {
+	opacity: 1;
+}
+
+.display-char-O .coll-0 .row-1,
+.display-char-O .coll-0 .row-2,
+.display-char-O .coll-0 .row-3,
+.display-char-O .coll-0 .row-4,
+.display-char-O .coll-0 .row-5,
+.display-char-O .coll-1 .row-0,
+.display-char-O .coll-1 .row-6,
+.display-char-O .coll-2 .row-0,
+.display-char-O .coll-2 .row-6,
+.display-char-O .coll-3 .row-0,
+.display-char-O .coll-3 .row-6,
+.display-char-O .coll-4 .row-1,
+.display-char-O .coll-4 .row-2,
+.display-char-O .coll-4 .row-3,
+.display-char-O .coll-4 .row-4,
+.display-char-O .coll-4 .row-5 {
+	opacity: 1;
+}
+
+.display-char-P .coll-0 .row-0,
+.display-char-P .coll-0 .row-1,
+.display-char-P .coll-0 .row-2,
+.display-char-P .coll-0 .row-3,
+.display-char-P .coll-0 .row-4,
+.display-char-P .coll-0 .row-5,
+.display-char-P .coll-0 .row-6,
+.display-char-P .coll-1 .row-0,
+.display-char-P .coll-1 .row-3,
+.display-char-P .coll-2 .row-0,
+.display-char-P .coll-2 .row-3,
+.display-char-P .coll-3 .row-0,
+.display-char-P .coll-3 .row-3,
+.display-char-P .coll-4 .row-1,
+.display-char-P .coll-4 .row-2 {
+	opacity: 1;
+}
+
+.display-char-Q .coll-0 .row-1,
+.display-char-Q .coll-0 .row-2,
+.display-char-Q .coll-0 .row-3,
+.display-char-Q .coll-0 .row-4,
+.display-char-Q .coll-0 .row-5,
+.display-char-Q .coll-1 .row-0,
+.display-char-Q .coll-1 .row-6,
+.display-char-Q .coll-2 .row-0,
+.display-char-Q .coll-2 .row-4,
+.display-char-Q .coll-2 .row-6,
+.display-char-Q .coll-3 .row-0,
+.display-char-Q .coll-3 .row-5,
+.display-char-Q .coll-4 .row-1,
+.display-char-Q .coll-4 .row-2,
+.display-char-Q .coll-4 .row-3,
+.display-char-Q .coll-4 .row-4,
+.display-char-Q .coll-4 .row-6 {
+	opacity: 1;
+}
+
+.display-char-R .coll-0 .row-0,
+.display-char-R .coll-0 .row-1,
+.display-char-R .coll-0 .row-2,
+.display-char-R .coll-0 .row-3,
+.display-char-R .coll-0 .row-4,
+.display-char-R .coll-0 .row-5,
+.display-char-R .coll-0 .row-6,
+.display-char-R .coll-1 .row-0,
+.display-char-R .coll-1 .row-3,
+.display-char-R .coll-2 .row-0,
+.display-char-R .coll-2 .row-3,
+.display-char-R .coll-2 .row-4,
+.display-char-R .coll-3 .row-0,
+.display-char-R .coll-3 .row-3,
+.display-char-R .coll-3 .row-5,
+.display-char-R .coll-4 .row-1,
+.display-char-R .coll-4 .row-2,
+.display-char-R .coll-4 .row-6 {
+	opacity: 1;
+}
+
+.display-char-S .coll-0 .row-0,
+.display-char-S .coll-0 .row-1,
+.display-char-S .coll-0 .row-2,
+.display-char-S .coll-0 .row-3,
+.display-char-S .coll-0 .row-6,
+.display-char-S .coll-1 .row-0,
+.display-char-S .coll-1 .row-3,
+.display-char-S .coll-1 .row-6,
+.display-char-S .coll-2 .row-0,
+.display-char-S .coll-2 .row-3,
+.display-char-S .coll-2 .row-6,
+.display-char-S .coll-3 .row-0,
+.display-char-S .coll-3 .row-3,
+.display-char-S .coll-3 .row-6,
+.display-char-S .coll-4 .row-0,
+.display-char-S .coll-4 .row-3,
+.display-char-S .coll-4 .row-4,
+.display-char-S .coll-4 .row-5,
+.display-char-S .coll-4 .row-6 {
+	opacity: 1;
+}
+
+.display-char-T .coll-0 .row-0,
+.display-char-T .coll-1 .row-0,
+.display-char-T .coll-2 .row-0,
+.display-char-T .coll-2 .row-1,
+.display-char-T .coll-2 .row-2,
+.display-char-T .coll-2 .row-3,
+.display-char-T .coll-2 .row-4,
+.display-char-T .coll-2 .row-5,
+.display-char-T .coll-2 .row-6,
+.display-char-T .coll-3 .row-0,
+.display-char-T .coll-4 .row-0 {
+	opacity: 1;
+}
+
+.display-char-U .coll-0 .row-0,
+.display-char-U .coll-0 .row-1,
+.display-char-U .coll-0 .row-2,
+.display-char-U .coll-0 .row-3,
+.display-char-U .coll-0 .row-4,
+.display-char-U .coll-0 .row-5,
+.display-char-U .coll-1 .row-6,
+.display-char-U .coll-2 .row-6,
+.display-char-U .coll-3 .row-6,
+.display-char-U .coll-4 .row-0,
+.display-char-U .coll-4 .row-1,
+.display-char-U .coll-4 .row-2,
+.display-char-U .coll-4 .row-3,
+.display-char-U .coll-4 .row-4,
+.display-char-U .coll-4 .row-5 {
+	opacity: 1;
+}
+
+.display-char-V .coll-0 .row-0,
+.display-char-V .coll-0 .row-1,
+.display-char-V .coll-0 .row-2,
+.display-char-V .coll-0 .row-3,
+.display-char-V .coll-0 .row-4,
+.display-char-V .coll-1 .row-5,
+.display-char-V .coll-2 .row-6,
+.display-char-V .coll-3 .row-5,
+.display-char-V .coll-4 .row-0,
+.display-char-V .coll-4 .row-1,
+.display-char-V .coll-4 .row-2,
+.display-char-V .coll-4 .row-3,
+.display-char-V .coll-4 .row-4 {
+	opacity: 1;
+}
+
+.display-char-W .coll-0 .row-0,
+.display-char-W .coll-0 .row-1,
+.display-char-W .coll-0 .row-2,
+.display-char-W .coll-0 .row-3,
+.display-char-W .coll-0 .row-4,
+.display-char-W .coll-0 .row-5,
+.display-char-W .coll-1 .row-6,
+.display-char-W .coll-2 .row-3,
+.display-char-W .coll-2 .row-4,
+.display-char-W .coll-2 .row-5,
+.display-char-W .coll-3 .row-6,
+.display-char-W .coll-4 .row-0,
+.display-char-W .coll-4 .row-1,
+.display-char-W .coll-4 .row-2,
+.display-char-W .coll-4 .row-3,
+.display-char-W .coll-4 .row-4,
+.display-char-W .coll-4 .row-5 {
+	opacity: 1;
+}
+
+.display-char-X .coll-0 .row-0,
+.display-char-X .coll-0 .row-1,
+.display-char-X .coll-0 .row-5,
+.display-char-X .coll-0 .row-6,
+.display-char-X .coll-1 .row-2,
+.display-char-X .coll-1 .row-4,
+.display-char-X .coll-2 .row-3,
+.display-char-X .coll-3 .row-2,
+.display-char-X .coll-3 .row-4,
+.display-char-X .coll-4 .row-0,
+.display-char-X .coll-4 .row-1,
+.display-char-X .coll-4 .row-5,
+.display-char-X .coll-4 .row-6 {
+	opacity: 1;
+}
+
+.display-char-Y .coll-0 .row-0,
+.display-char-Y .coll-0 .row-1,
+.display-char-Y .coll-0 .row-2,
+.display-char-Y .coll-1 .row-3,
+.display-char-Y .coll-2 .row-4,
+.display-char-Y .coll-2 .row-5,
+.display-char-Y .coll-2 .row-6,
+.display-char-Y .coll-3 .row-3,
+.display-char-Y .coll-4 .row-0,
+.display-char-Y .coll-4 .row-1,
+.display-char-Y .coll-4 .row-2 {
+	opacity: 1;
+}
+
+.display-char-Z .coll-0 .row-0,
+.display-char-Z .coll-0 .row-5,
+.display-char-Z .coll-0 .row-6,
+.display-char-Z .coll-1 .row-0,
+.display-char-Z .coll-1 .row-4,
+.display-char-Z .coll-1 .row-6,
+.display-char-Z .coll-2 .row-0,
+.display-char-Z .coll-2 .row-3,
+.display-char-Z .coll-2 .row-6,
+.display-char-Z .coll-3 .row-0,
+.display-char-Z .coll-3 .row-2,
+.display-char-Z .coll-3 .row-6,
+.display-char-Z .coll-4 .row-0,
+.display-char-Z .coll-4 .row-1,
+.display-char-Z .coll-4 .row-6 {
+	opacity: 1;
+}
+
+.status-1 .progcol-1 {
+	opacity: 1;
+}
+
+.status-2 .progcol-1,
+.status-2 .progcol-2 {
+	opacity: 1;
+}
+
+.status-3 .progcol-1,
+.status-3 .progcol-2,
+.status-3 .progcol-3 {
+	opacity: 1;
+}
+
+.status-4 .progcol-1,
+.status-4 .progcol-2,
+.status-4 .progcol-3,
+.status-4 .progcol-4 {
+	opacity: 1;
+}
+
+.status-5 .progcol-1,
+.status-5 .progcol-2,
+.status-5 .progcol-3,
+.status-5 .progcol-4,
+.status-5 .progcol-5 {
+	opacity: 1;
+}
+
+.status-6 .progcol-1,
+.status-6 .progcol-2,
+.status-6 .progcol-3,
+.status-6 .progcol-4,
+.status-6 .progcol-5,
+.status-6 .progcol-6 {
+	opacity: 1;
+}
+
+.status-7 .progcol-1,
+.status-7 .progcol-2,
+.status-7 .progcol-3,
+.status-7 .progcol-4,
+.status-7 .progcol-5,
+.status-7 .progcol-6,
+.status-7 .progcol-7 {
+	opacity: 1;
+}
+
+.status-8 .progcol-1,
+.status-8 .progcol-2,
+.status-8 .progcol-3,
+.status-8 .progcol-4,
+.status-8 .progcol-5,
+.status-8 .progcol-6,
+.status-8 .progcol-7,
+.status-8 .progcol-8 {
+	opacity: 1;
+}
+
+.status-9 .progcol-1,
+.status-9 .progcol-2,
+.status-9 .progcol-3,
+.status-9 .progcol-4,
+.status-9 .progcol-5,
+.status-9 .progcol-6,
+.status-9 .progcol-7,
+.status-9 .progcol-8,
+.status-9 .progcol-9 {
+	opacity: 1;
+}
+
+.status-10 .progcol-1,
+.status-10 .progcol-2,
+.status-10 .progcol-3,
+.status-10 .progcol-4,
+.status-10 .progcol-5,
+.status-10 .progcol-6,
+.status-10 .progcol-7,
+.status-10 .progcol-8,
+.status-10 .progcol-9,
+.status-10 .progcol-10 {
+	opacity: 1;
+}
+
+.status-11 .progcol-1,
+.status-11 .progcol-2,
+.status-11 .progcol-3,
+.status-11 .progcol-4,
+.status-11 .progcol-5,
+.status-11 .progcol-6,
+.status-11 .progcol-7,
+.status-11 .progcol-8,
+.status-11 .progcol-9,
+.status-11 .progcol-10,
+.status-11 .progcol-11 {
+	opacity: 1;
+}
+
+.status-12 .progcol-1,
+.status-12 .progcol-2,
+.status-12 .progcol-3,
+.status-12 .progcol-4,
+.status-12 .progcol-5,
+.status-12 .progcol-6,
+.status-12 .progcol-7,
+.status-12 .progcol-8,
+.status-12 .progcol-9,
+.status-12 .progcol-10,
+.status-12 .progcol-11,
+.status-12 .progcol-12 {
+	opacity: 1;
+}
+
+.status-13 .progcol-1,
+.status-13 .progcol-2,
+.status-13 .progcol-3,
+.status-13 .progcol-4,
+.status-13 .progcol-5,
+.status-13 .progcol-6,
+.status-13 .progcol-7,
+.status-13 .progcol-8,
+.status-13 .progcol-9,
+.status-13 .progcol-10,
+.status-13 .progcol-11,
+.status-13 .progcol-12,
+.status-13 .progcol-13 {
+	opacity: 1;
+}
+
+.status-14 .progcol-1,
+.status-14 .progcol-2,
+.status-14 .progcol-3,
+.status-14 .progcol-4,
+.status-14 .progcol-5,
+.status-14 .progcol-6,
+.status-14 .progcol-7,
+.status-14 .progcol-8,
+.status-14 .progcol-9,
+.status-14 .progcol-10,
+.status-14 .progcol-11,
+.status-14 .progcol-12,
+.status-14 .progcol-13,
+.status-14 .progcol-14 {
+	opacity: 1;
+}
+
+.status-15 .progcol-1,
+.status-15 .progcol-2,
+.status-15 .progcol-3,
+.status-15 .progcol-4,
+.status-15 .progcol-5,
+.status-15 .progcol-6,
+.status-15 .progcol-7,
+.status-15 .progcol-8,
+.status-15 .progcol-9,
+.status-15 .progcol-10,
+.status-15 .progcol-11,
+.status-15 .progcol-12,
+.status-15 .progcol-13,
+.status-15 .progcol-14,
+.status-15 .progcol-15 {
+	opacity: 1;
+}
+
+.status-16 .progcol-1,
+.status-16 .progcol-2,
+.status-16 .progcol-3,
+.status-16 .progcol-4,
+.status-16 .progcol-5,
+.status-16 .progcol-6,
+.status-16 .progcol-7,
+.status-16 .progcol-8,
+.status-16 .progcol-9,
+.status-16 .progcol-10,
+.status-16 .progcol-11,
+.status-16 .progcol-12,
+.status-16 .progcol-13,
+.status-16 .progcol-14,
+.status-16 .progcol-15,
+.status-16 .progcol-16 {
+	opacity: 1;
+}
+
+.status-17 .progcol-1,
+.status-17 .progcol-2,
+.status-17 .progcol-3,
+.status-17 .progcol-4,
+.status-17 .progcol-5,
+.status-17 .progcol-6,
+.status-17 .progcol-7,
+.status-17 .progcol-8,
+.status-17 .progcol-9,
+.status-17 .progcol-10,
+.status-17 .progcol-11,
+.status-17 .progcol-12,
+.status-17 .progcol-13,
+.status-17 .progcol-14,
+.status-17 .progcol-15,
+.status-17 .progcol-16,
+.status-17 .progcol-17 {
+	opacity: 1;
+}
+
+.status-18 .progcol-1,
+.status-18 .progcol-2,
+.status-18 .progcol-3,
+.status-18 .progcol-4,
+.status-18 .progcol-5,
+.status-18 .progcol-6,
+.status-18 .progcol-7,
+.status-18 .progcol-8,
+.status-18 .progcol-9,
+.status-18 .progcol-10,
+.status-18 .progcol-11,
+.status-18 .progcol-12,
+.status-18 .progcol-13,
+.status-18 .progcol-14,
+.status-18 .progcol-15,
+.status-18 .progcol-16,
+.status-18 .progcol-17,
+.status-18 .progcol-18 {
+	opacity: 1;
+}
+
+.status-19 .progcol-1,
+.status-19 .progcol-2,
+.status-19 .progcol-3,
+.status-19 .progcol-4,
+.status-19 .progcol-5,
+.status-19 .progcol-6,
+.status-19 .progcol-7,
+.status-19 .progcol-8,
+.status-19 .progcol-9,
+.status-19 .progcol-10,
+.status-19 .progcol-11,
+.status-19 .progcol-12,
+.status-19 .progcol-13,
+.status-19 .progcol-14,
+.status-19 .progcol-15,
+.status-19 .progcol-16,
+.status-19 .progcol-17,
+.status-19 .progcol-18,
+.status-19 .progcol-19 {
+	opacity: 1;
+}
+
+.status-20 .progcol-1,
+.status-20 .progcol-2,
+.status-20 .progcol-3,
+.status-20 .progcol-4,
+.status-20 .progcol-5,
+.status-20 .progcol-6,
+.status-20 .progcol-7,
+.status-20 .progcol-8,
+.status-20 .progcol-9,
+.status-20 .progcol-10,
+.status-20 .progcol-11,
+.status-20 .progcol-12,
+.status-20 .progcol-13,
+.status-20 .progcol-14,
+.status-20 .progcol-15,
+.status-20 .progcol-16,
+.status-20 .progcol-17,
+.status-20 .progcol-18,
+.status-20 .progcol-19,
+.status-20 .progcol-20 {
+	opacity: 1;
+}
+
+.status-21 .progcol-1,
+.status-21 .progcol-2,
+.status-21 .progcol-3,
+.status-21 .progcol-4,
+.status-21 .progcol-5,
+.status-21 .progcol-6,
+.status-21 .progcol-7,
+.status-21 .progcol-8,
+.status-21 .progcol-9,
+.status-21 .progcol-10,
+.status-21 .progcol-11,
+.status-21 .progcol-12,
+.status-21 .progcol-13,
+.status-21 .progcol-14,
+.status-21 .progcol-15,
+.status-21 .progcol-16,
+.status-21 .progcol-17,
+.status-21 .progcol-18,
+.status-21 .progcol-19,
+.status-21 .progcol-20,
+.status-21 .progcol-21 {
+	opacity: 1;
+}
+
+.status-22 .progcol-1,
+.status-22 .progcol-2,
+.status-22 .progcol-3,
+.status-22 .progcol-4,
+.status-22 .progcol-5,
+.status-22 .progcol-6,
+.status-22 .progcol-7,
+.status-22 .progcol-8,
+.status-22 .progcol-9,
+.status-22 .progcol-10,
+.status-22 .progcol-11,
+.status-22 .progcol-12,
+.status-22 .progcol-13,
+.status-22 .progcol-14,
+.status-22 .progcol-15,
+.status-22 .progcol-16,
+.status-22 .progcol-17,
+.status-22 .progcol-18,
+.status-22 .progcol-19,
+.status-22 .progcol-20,
+.status-22 .progcol-21,
+.status-22 .progcol-22 {
+	opacity: 1;
+}
+
+.status-23 .progcol-1,
+.status-23 .progcol-2,
+.status-23 .progcol-3,
+.status-23 .progcol-4,
+.status-23 .progcol-5,
+.status-23 .progcol-6,
+.status-23 .progcol-7,
+.status-23 .progcol-8,
+.status-23 .progcol-9,
+.status-23 .progcol-10,
+.status-23 .progcol-11,
+.status-23 .progcol-12,
+.status-23 .progcol-13,
+.status-23 .progcol-14,
+.status-23 .progcol-15,
+.status-23 .progcol-16,
+.status-23 .progcol-17,
+.status-23 .progcol-18,
+.status-23 .progcol-19,
+.status-23 .progcol-20,
+.status-23 .progcol-21,
+.status-23 .progcol-22,
+.status-23 .progcol-23 {
+	opacity: 1;
+}
+
+
+
+
+
+#vertical-center {
+	position: absolute;
+	height: 0;
+	top: 50%;
+	left: 50%
+}
+
+#main-container {
+	margin-top: -110px;
+	margin-left: -280px;
+	width: 552px;
+}
+
+
+
+#main-container .display-container:last-child {
+	margin: 0;
+}
+
+#main-container:after {
+	display: block;
+	content: '.';
+	visibility: hidden;
+	clear: both;
+}
